@@ -1,4 +1,5 @@
 from flask import Flask
+from blog.blog_bp import main
 
 
 
@@ -6,6 +7,8 @@ from flask import Flask
 
 
 app = Flask(__name__)
+
+app.register_blueprint(main)
 
 
 
