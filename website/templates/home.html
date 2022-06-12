@@ -8,7 +8,7 @@
               <a class="mr-2" href="#">{{ data.title }}</a>
               <small class="text-muted">{{ data.user_name }}</small>
             </div>
-            <h2><a class="article-title" href="#">{{ data.content }}</a></h2>
+            <h2><a class="article-title" href={{ url_for('blog_list_bp.blog_details' ,id=data.id) }}>{{ data.content }}</a></h2>
             <p class="article-content">{{ data.created_at }}</p>
           </div>
         </article>
